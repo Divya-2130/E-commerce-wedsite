@@ -5,7 +5,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   host: '0.0.0.0',
-  port: process.env.PORT || 5173, 
+  port: 5173,
   strictPort: true,
   allowedHosts: ['e-commerce-wedsite.onrender.com']
+  ,
+  preview: {
+    host: '0.0.0.0',
+    port: 4173, // Ensure correct port for preview mode
+    strictPort: true,
+    allowedHosts: ['.onrender.com', 'localhost']
+  }
 })
