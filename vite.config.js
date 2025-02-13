@@ -9,12 +9,12 @@ export default defineConfig({
   "start": "vite preview --host 0.0.0.0 --port 10000",
   "build": "vite build",
   strictPort: true,
-  allowedHosts: ['.onrender.com', 'localhost' ]
+  allowedHosts: ['e-commerce-wedsite.onrender.com', 'localhost' ]
   ,
   preview: {
     host: '0.0.0.0',
     port: 4173, // Ensure correct port for preview mode
     strictPort: true,
-    allowedHosts: ['.onrender.com', 'localhost']
+    allowedHosts: ['e-commerce-wedsite.onrender.com', 'localhost']
   }
 })
